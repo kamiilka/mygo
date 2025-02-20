@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Формa зворотного зв'язку</h1>
+    <hr>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Введіть дані</legend>
+
+            
+            <br>
+
+            <label for="num">Введіть номер</label>
+            <input type="tel" name="number" id="num" placeholder="phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+            <br>
+            <br>
+
+            <label for="avatar">Прикріпіть файл(за потреби)</label>
+            <input type="file" accept=".img, .jpeg, .png" name="avatar" id="avatar">
+
+            <br>
+            <br>
+
+            <h3>Оберіть категорію звернення:</h3>
+            
+            <input type="radio" name="category" id="category">
+            <label for="category">підтримка</label>
+            <input type="radio" name="category" id="category">
+            <label for="category">побажання</label>
+            <input type="radio" name="category" id="category">
+            <label for="category">скарга</label>
+            <input type="radio" name="category" id="category">
+            <label for="category">інше</label>
+            
+           
+
+            <br>
+            <br>
+
+            <label for="tema"> Тема повідомлення</label>
+            <input type="text" name="tema" id="tema">
+
+            <br>
+            <br>
+
+            <label for="message">Опишіть повідомлення, яке б хотіли надіслати</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+
+            <br>
+            <br>
+            <h3>Виберіть спосіб для зв'язку з вами:</h3>
+            
+            <input type="radio" name="telephone" id="telephone">
+            <label for="telephone">Зателефонувати</label>
+            <br>
+            
+            <input type="radio" name="via_email" id="via_email">
+            <label for="via_email">лист на пошту</label>
+            <br>
+            
+            <input type="radio" name="via_message" id="via_message">
+            <label for="via_message">надіслати повідомлення</label>
+            <br>
+            
+
+        </fieldset>
+        <br>
+        <br>
+        <input type="submit" name="sub" id="sub">
+    </form>
+</body>
+
+</html>
